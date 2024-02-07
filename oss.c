@@ -10,8 +10,8 @@ void printUsage(const char *programName) {
 }
 
 void singleuserprocess(int iters) {
-    char iterationArg[10];
-    snprintf(iterationArg, sizeof(iterationArg), "%d", iters);
+    char itersarg[10];
+    snprintf(itersarg, sizeof(itersationarg), "%d", iters);
 
     execl("./user", "./user", iterationArg, NULL);
     perror("execl");
