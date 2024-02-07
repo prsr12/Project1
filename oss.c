@@ -13,7 +13,7 @@ void singleuserprocess(int iters) {
     char itersarg[10];
     snprintf(itersarg, sizeof(itersarg), "%d", iters);
 
-    execl("./user", "./user", iterationArg, NULL);
+    execl("./user", "./user", itersarg, NULL);
     perror("execl");
     exit(1);
 }
