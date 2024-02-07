@@ -11,7 +11,7 @@ void printUsage(const char *programName) {
 
 void singleuserprocess(int iters) {
     char itersarg[10];
-    snprintf(itersarg, sizeof(itersationarg), "%d", iters);
+    snprintf(itersarg, sizeof(itersarg), "%d", iters);
 
     execl("./user", "./user", iterationArg, NULL);
     perror("execl");
